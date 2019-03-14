@@ -40,12 +40,12 @@ $(document).ready(function(){
     };
 
     //create upgrades
-    var butt = new upgrade(102, 0, 1.2, 1, '#buttcost', '#buttcurr', '#butt');
-    var toilet = new upgrade(315, 0, 1.4, 3, '#toiletcost','#toiletcurr','#toilet');
-    var cond = new upgrade(2540, 0, 1.6, 25, '#condcost','#condcurr','#cond');
-    var tardis = new upgrade(10500, 0, 1.8, 100, '#tardiscost', '#tardiscurr','#tardis');
-    var facility = new upgrade(42050, 0, 1.85, 402, '#facilitycost', '#facilitycurr','#facility');
-    var nuke = new upgrade(106700, 0, 2, 1000, '#nukecost','#nukecurr','#nuke');
+    var butt = new upgrade(100, 0, 1.5, 1, '#buttcost', '#buttcurr', '#butt');
+    var toilet = new upgrade(500, 0, 1.5, 5, '#toiletcost','#toiletcurr','#toilet');
+    var cond = new upgrade(2500, 0, 1.5, 25, '#condcost','#condcurr','#cond');
+    var tardis = new upgrade(10000, 0, 1.5, 100, '#tardiscost', '#tardiscurr','#tardis');
+    var facility = new upgrade(40000, 0, 1.5, 400, '#facilitycost', '#facilitycurr','#facility');
+    var nuke = new upgrade(100000, 0, 1.5, 1000, '#nukecost','#nukecurr','#nuke');
 
     //create functions
     var check = function(){
