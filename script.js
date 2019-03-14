@@ -186,7 +186,7 @@ $(document).ready(function(){
         }
     }
     reset = function(){
-        var r = confirm("ARE YOU SURE YOU WANT TO RESET?????!!!!! All your progress will be lost");
+        var r = confirm("ARE YOU SURE YOU WANT TO RESET ? All your progress will be lost");
         if (r==true){
             localStorage.removeItem('poopsave');
             location.reload();
@@ -247,7 +247,7 @@ $(document).ready(function(){
             $('#theme').show();
             clickedOnce = 1;
             adding = setInterval(updateall, 1000);
-            saving = setInterval(save, 180000);
+            saving = setInterval(save, 18000);
         }else{
             updatepoop();
         };
@@ -273,7 +273,7 @@ $(document).ready(function(){
             $('#cursor').attr('disabled','');
             poop -= cursorCost;
             ppc *= 2;
-            cursorCost *= 4;
+            cursorCost *= 2;
             $('#cursorcost').html(cursorCost);
             $('#cursorcurr').html(ppc+" ppc");
             updatepoop();
