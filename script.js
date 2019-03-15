@@ -273,7 +273,7 @@ $(document).ready(function(){
             $('#cursor').attr('disabled','');
             poop -= cursorCost;
             ppc *= 2;
-            cursorCost *= 2;
+            cursorCost *= 3;
             $('#cursorcost').html(cursorCost);
             $('#cursorcurr').html(ppc+" ppc");
             updatepoop();
