@@ -10,7 +10,7 @@ $(document).ready(function(){
     //Create required variables
     var clickedOnce = 0;
     var poop = 0;
-    var ppc = 1;
+    var ppc = 5;
     var pps = 0;
     var cursorCost = 25;
     var dark = false
