@@ -183,8 +183,6 @@ $(document).ready(function(){
             facility.pps = ret.facilitypps || 0;
             nuke.cost = ret.nukeCost || 106700;
             nuke.pps = ret.nukepps || 0;
-            world.cost = ret.worldCost || 0;
-            world.pps = ret.worldpps || 0;
             updatepoop();
             updatepps();
             updatetable();
@@ -299,7 +297,6 @@ $(document).ready(function(){
     $('#tardis').click(function(){tardis.buy();});
     $('#facility').click(function(){facility.buy();});
     $('#nuke').click(function(){nuke.buy();});
-    $('#world').click(function(){world.buy();});
 
     $('#save').click(function(){save()});
     $('#load').click(function(){load()});
