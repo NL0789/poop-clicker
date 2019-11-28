@@ -143,8 +143,6 @@ $(document).ready(function(){
             facilitypps: facility.pps,
             nukeCost: nuke.cost,
             nukepps: nuke.pps
-            worldCost: world.cost,
-            worldpps: world.pps
         }
         var send = JSON.stringify(saveObject);
         var send = btoa(send);
