@@ -46,6 +46,7 @@ $(document).ready(function(){
     var tardis = new upgrade(10000, 0, 1.5, 100, '#tardiscost', '#tardiscurr','#tardis');
     var facility = new upgrade(40000, 0, 1.5, 400, '#facilitycost', '#facilitycurr','#facility');
     var nuke = new upgrade(100000, 0, 1.5, 1000, '#nukecost','#nukecurr','#nuke');
+    var world = new upgrade(400000, 0, 1.5, 4000, '#worldcost','#worldcurr','#world');
 
     //create functions
     var check = function(){
