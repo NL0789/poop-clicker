@@ -85,6 +85,11 @@ $(document).ready(function(){
         }else{
             $('#nuke').attr('disabled','');
         }
+        if (poop > world.cost || poop === world.cost){
+            $('#world').removeAttr('disabled');
+        }else{
+            $('#world').attr('disabled','');
+        }
     };
     var updatepps = function(){
         $('#pps').html("pps: " + pps);
@@ -107,6 +112,8 @@ $(document).ready(function(){
         $('#facilitycurr').html(facility.pps +' pps');
         $('#nukecost').html(nuke.cost);
         $('#nukecurr').html(nuke.pps +' pps');
+        $('#worldcost').html(world.cost);
+        $('#worldcurr').html(world.pps +' pps');
     }
     var updateall = function(){
         poop += pps;
@@ -136,6 +143,8 @@ $(document).ready(function(){
             facilitypps: facility.pps,
             nukeCost: nuke.cost,
             nukepps: nuke.pps
+            worldCost: world.cost,
+            worldpps: world.pps
         }
         var send = JSON.stringify(saveObject);
         var send = btoa(send);
@@ -176,6 +185,8 @@ $(document).ready(function(){
             facility.pps = ret.facilitypps || 0;
             nuke.cost = ret.nukeCost || 106700;
             nuke.pps = ret.nukepps || 0;
+            world.cost = ret.worldCost || 0;
+            world.pps = ret.worldpps || 0;
             updatepoop();
             updatepps();
             updatetable();
@@ -290,6 +301,7 @@ $(document).ready(function(){
     $('#tardis').click(function(){tardis.buy();});
     $('#facility').click(function(){facility.buy();});
     $('#nuke').click(function(){nuke.buy();});
+    $('#world').click(function(){world.buy();});
 
     $('#save').click(function(){save()});
     $('#load').click(function(){load()});
