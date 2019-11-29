@@ -183,8 +183,8 @@ $(document).ready(function(){
             facility.pps = ret.facilitypps || 0;
             nuke.cost = ret.nukeCost || 106700;
             nuke.pps = ret.nukepps || 0;
-            world.cost = ret.worldCost || 0;
             world.pps = pps-(butt.pps+toilet.pps+cond.pps+tardis.pps+facility.pps+nuke.pps);
+            world.cost = 200000^(world.pps/4000)
             updatepoop();
             updatepps();
             updatetable();
